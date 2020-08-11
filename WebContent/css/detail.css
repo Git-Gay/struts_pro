@@ -1,0 +1,100 @@
+body{
+	background-color: #F7F7F7;
+	font: "arial, helvetica, sans-serif";
+}
+ul li{
+	list-style: none;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.right-content{
+	padding:0px 25px 0px 25px;
+    background-color: #fff;
+    overflow: hidden;
+    border:1px solid #eee;
+    width: 900px;
+    margin:0 auto;
+ 	height:600px;
+ 	box-shadow: 0px 2px 4px 0px rgba(30,30,30,0.1);
+}
+.headz{
+	margin-top:0px;
+	padding: 15px auto;
+	border-bottom: 1px solid #eee;
+	width: 100%;
+	color: #666;
+}
+.content{
+	width: 100%;
+	margin: 0 auto;
+}
+.foodimg{
+	float: left;
+	overflow: hidden;
+	margin-top:15px ;
+}
+.foodimg img{
+	width: 150px;
+	height: 150px;
+	border: 1px solid #eee;
+}
+.detail{
+	padding: 5px;
+	width: 65%;
+	float: left;
+	margin-left: 50px;
+	margin-top:8px;
+}
+.miaoshu{
+	width: 150px;
+	height:150px;
+	text-overflow: ellipsis;
+    line-height: 20px;
+    font-size: 14px;
+    overflow: hidden;
+    margin-top:5px;
+    text-align: justify;
+    color: #888;
+}
+.sales{
+	float: right;
+	font-size: 12px;
+}
+.detail li{
+	margin-bottom: 5px;
+}
+.submit{
+	float: right;
+	cursor: pointer;
+	height: 30px;
+	line-height: 30px;
+	width:120px;
+	border: none;
+	background:#1e89e0;
+	color: #fff;
+	font-size: 12px;
+	border-radius: 20px;
+	margin-top: 0px;
+}
+.pingjia{
+	margin-top:5px;
+}
+.pingjia li{
+	padding: 10px 10px 0px 10px;
+	font-size: 12px;
+	border-bottom:1px solid #eee;
+}
+.allping{
+	width: 120px;
+	height: 40px;
+	line-height:40px;
+	background:#1e89e0 ;
+	margin: 20px auto;
+	border-radius:20px;
+	text-align: center;
+	color: #fff;
+}

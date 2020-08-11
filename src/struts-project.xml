@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+	"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+	"http://struts.apache.org/dtds/struts-2.0.dtd">
+<struts>
+	<package name="food" namespace="/" extends="struts-default">
+		<global-results>
+			<result name="query">/index.jsp</result>
+		</global-results>
+		<action name="queryfood" class="action.FoodAction" method="query"></action>			<!--菜的分类查询-->
+		<action name="search" class="action.FoodAction" method="search"></action>			<!--搜索框查询-->
+		<action name="queryall" class="action.FoodAction" method="queryAll">				<!-- 菜的详情查询 -->
+			<result name="queryAll">/detail.jsp</result>
+		</action>
+		<action name="adddish" class="action.FoodAction" method="addShop">				<!-- 加入购物车 -->
+			<result name="addshop">/index.jsp</result>
+			<result name="addfail">/error.jsp</result>
+		</action>
+		<action name="queryshop" class="action.FoodAction" method="queryShop">				<!-- 查询购物车 -->
+			<result name="qushop">/index.jsp</result>
+		</action>
+		<action name="queryuser" class="action.UserAction" method="queryUser">				<!-- 个人信息查询 -->
+			<result name="success">/userinfo.jsp</result>
+			<result name="qufail">/error.jsp</result>
+		</action>
+		<action name="update" class="action.UserAction" method="updateUser">			<!-- 个人信息修改 -->
+			<result name="update">/userinfo.jsp</result>
+			<result name="upfail">/error.jsp</result>
+		</action>	
+		<action name="updateimg" class="action.UserAction" method="updateImg">				<!-- 头像修改 -->
+			<result name="update">/userinfo.jsp</result>
+			<result name="upfail">/error.jsp</result>
+		</action>
+		<action name="add" class="action.FoodAction" method="addFood">						<!-- 菜品上架 -->
+			<result name="addsuccess">/success.jsp</result>
+			<result name="addfail">/error.jsp</result>
+		</action>
+		<action name="all" class="action.FoodAction" method="allFood">						<!-- 全部菜查询 -->
+			<result name="allfood">/allfood.jsp</result>
+		</action>
+		<action name="delete" class="action.FoodAction" method="delFood">						<!-- 菜品下架 -->
+			<result name="delok">/allfood.jsp</result>
+			<result name="delfail">/error.jsp</result>
+		</action>
+	</package>
+</struts>

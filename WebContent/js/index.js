@@ -1,0 +1,24 @@
+	$(document).ready(function(){
+				var i=false;
+				$(".item").mouseover(function(){
+					$(this).css("background","#006bc7");
+				});
+				$(".item").mouseout(function(){
+					$(this).css("background","#1e89e0");
+				});
+				$(".shop-image,.shop").click(function(){
+					if(i==false){
+						$(".sidebar").removeClass("false").addClass("true");
+						i=true;
+					}else{
+						$(".sidebar").removeClass("true").addClass("false");
+						i=false;
+					}
+				});
+				$(".foodtd").mouseover(function(){
+					$(this).css("background","#eee");
+				});
+				$(".foodtd").mouseout(function(){
+					$(this).css("background","#fff");
+				});
+			});
